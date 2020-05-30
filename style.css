@@ -60,4 +60,33 @@ nav a {
 .nav-toggle:checked ~ div nav {
     transform: scale(1, 1);
 }
-
+.search-icon {
+    width: 15px;
+    height: auto;
+}
+.search-wrapper input[type=search] {
+    padding: 0 16px 0 40px;
+    display: block;
+    height: 36px;
+    width: 100%;
+    border: 1px solid #edeff1;
+    border-radius: 4px;
+    background-color: #f6f7f8;
+    background-image: url("https://www.pinclipart.com/picdir/big/15-153180_search-button-search-symbol-svg-clipart.png");
+    background-size: 20px auto;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 7px;
+}
+.search-wrapper input[type=search]:focus {
+    background-color: white;
+}
+/* .search-wrapper {
+    position: relative;
+}
+.search-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+} */
