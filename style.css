@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
 }
-.header-container {
+header {
     position: fixed;
     display: inline-flex;
     background-color: white;
@@ -12,68 +12,52 @@ html {
     left: 0;
     right: 0;
     top: 0;
-    z-index: 80; /*Not sure what this does tbh*/
+    z-index: 80;
     margin-top: 0;
+    
 }
-body { 
+body {
     background-color: #DAE0E6;
 }
-.circle{
-    height: 30px;
-    width: 30px;
-    background-color: #FF4500;
-    margin: 5px;
-    border-radius: 100%;
+.reddit_logo {
+    width: 120px;
+    height: auto;
 }
-ul {
-    background-color: darkorange;
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
+.nav-toggle {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
 }
-li {
-    display: block;
-    transition-duration: 0.5s;
-    float: left;
-    padding: 1rem;
-    position: relative;
-    background-color: white;
-}
-.navigation:hover {
-    cursor: pointer;
-}
-.navigation ul    {
-    visibility: hidden;
-    opacity: 0;
-    min-width: 5rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    display: none;
-}
-.navigation:hover > ul 
- {
-    visibility: visible;
-    opacity: 1;
-    display: block;
-}
-ul li  {
-    clear: both;
-    width: 100%;
-}
-li:hover {
-    background-color: pink;
-}
-.navigation {
+.nav-toggle-label div {
+    background-color: lightblue;
     height: 20px;
     width: 30px;
-    background-color: lightblue;
     margin: 10px;
-    
-    border-radius: 15%;
-    border: solid black;
+    border: solid black 1px;
+    border-radius: 2px;
 }
-.header-search-bar {
-    background-color: #f6f7f8;
-    -webkit-appearance: none;
+nav {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    border: solid #edeff1 1px;
+    border-radius: 2px;
+    transform: scale(1, 0);
 }
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav li {
+    margin: 1em;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 24px;
+}
+.nav-toggle:checked ~ div nav {
+    transform: scale(1, 1);
+}
+
