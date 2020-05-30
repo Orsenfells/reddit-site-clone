@@ -1,0 +1,79 @@
+html {
+    box-sizing: border-box;
+}
+.header-container {
+    position: fixed;
+    display: inline-flex;
+    background-color: white;
+    flex-direction: row;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 80; /*Not sure what this does tbh*/
+    margin-top: 0;
+}
+body { 
+    background-color: #DAE0E6;
+}
+.circle{
+    height: 30px;
+    width: 30px;
+    background-color: #FF4500;
+    margin: 5px;
+    border-radius: 100%;
+}
+ul {
+    background-color: darkorange;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+li {
+    display: block;
+    transition-duration: 0.5s;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    background-color: white;
+}
+.navigation:hover {
+    cursor: pointer;
+}
+.navigation ul    {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    display: none;
+}
+.navigation:hover > ul 
+ {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ul li  {
+    clear: both;
+    width: 100%;
+}
+li:hover {
+    background-color: pink;
+}
+.navigation {
+    height: 20px;
+    width: 30px;
+    background-color: lightblue;
+    margin: 10px;
+    
+    border-radius: 15%;
+    border: solid black;
+}
+.header-search-bar {
+    background-color: #f6f7f8;
+    -webkit-appearance: none;
+}
