@@ -16,9 +16,11 @@ header {
     margin-top: 0;
     
 }
+
 body {
     background-color: #DAE0E6;
 }
+
 .reddit_logo {
     width: 120px;
     height: auto;
@@ -31,10 +33,13 @@ body {
 .nav-toggle-label div {
     background-color: lightblue;
     height: 20px;
-    width: 30px;
+    width: 270px;
     margin: 10px;
     border: solid black 1px;
     border-radius: 2px;
+}
+.nav-toggle-label div:hover {
+    cursor: pointer;
 }
 nav {
     position: absolute;
@@ -81,12 +86,22 @@ nav a {
 .search-wrapper input[type=search]:focus {
     background-color: white;
 }
-/* .search-wrapper {
-    position: relative;
+.outer-wrapper {
+    display: inline-flex;
+    margin: 1em;
 }
-.search-wrapper img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-} */
+.first-inner-wrapper {
+    display: flex;
+}
+.header-quicklink {
+    height: 16px;
+    padding: 8px;
+    width: 16px;
+    border-radius: 2px;
+}
+svg {
+    width: 1em;
+}
+a:hover {
+    background-color: #e8e8e8;
+}
